@@ -189,6 +189,8 @@ def _to_list(results):
 
 if __name__ == '__main__':
   opt = opts().parse()
+  opt.data_dir = "/vinai/pha.nguyen/"
+
   if opt.not_prefetch_test:
     test(opt)
   else:
